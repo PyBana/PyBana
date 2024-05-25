@@ -21,3 +21,5 @@ Connect with me on:
   LinkedIn: www.linkedin.com/in/farhan-tachibana-ft7
 
 Let's exchange ideas, share insights, and explore the fascinating world of data together!
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" width="50"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1163px-Java_programming_language_logo.svg.png" alt="Java Logo" width="50">
