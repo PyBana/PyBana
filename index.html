@@ -7,12 +7,55 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="images\finalLogo.png" type="image/x-icon">
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			.slider {
+				position: relative;
+				width: 100%;
+				height: 400px;
+				max-width: 1200px;
+				margin: auto;
+				overflow: hidden;
+				border: 2px solid #f3f3f3;
+				border-radius: 10px;
+				border-style:outset;
+			}
+			.slides {
+				display: flex;
+				width: 200%;
+				animation: slide 12s infinite;
+			}
+			.slide {
+				width: 100%;
+				transition: 6s;
+			}
+			.slide img {
+				width: 100%;
+				height: 400px;
+				object-fit: fill;
+				border-radius: 10px;
+			}
+			@keyframes slide {
+				0% { transform: translateX(0); }
+            50% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+			}
+			@media screen and (max-width: 480px) {
+            .slider {
+                display: none;
+            }
+			
+        }
+		
+		</style>
+		
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
-
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Farhan Tachibana <br /> Portfolio</h1>
@@ -52,17 +95,38 @@
 										I also feature other projects that underscore my versatility as a programmer. Arranged chronologically from latest to earliest, each project reflects my journey as an aspiring data analyst, 
 										navigating through the intricacies of data analysis and visualization, as well as other technical challenges.</p>
 								</header>
-								<a href="https://github.com/PyBana" class="image main"><img src="images\showcasePic.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href='#posts' class="button large">View Projects</a></li>
+								<!-- <a href="https://github.com/PyBana" class="image main"><img src="images\showcasePic.png" alt="" /></a> -->		
+								<div class="slider">
+									<div class="slides">
+										<div class="slide">
+											<img src="images\SalesAnalyticsPic.png" alt="Toy Box">
+										</div>
+										<div class="slide">
+											<img src="images\e-commerce.png" alt="Shopping cart">
+										</div>
+										<div class="slide">
+											<img src="images\ToyotaTower.png" alt="Tokyo Tower">
+										</div>
+										<div class="slide">
+											<img src="images\ToyotaLogo.png" alt="Toyota Logo">
+										</div>
+										<div class="slide">
+											<img src="images\tictactoeproject.png" alt="tictactoe">
+										</div>
+									</div>
+								</div>
+			
+								<ul class="actions special" style="margin-top: 60px;">
+									<li><a href='#posts' class="button large">View Projects </a></li>
 								</ul>
+
 							</article>
 
 						<!-- Posts -->
 							<section id = "posts" class="posts">
 								<article>
 									<header>
-										<h2><a href="https://github.com/PyBana/Project_SalesAnalytics">Retail<br />
+										<h2><a href="https://github.com/PyBana/Project_SalesAnalytics">Toy Manufacturer<br />
 										Sales Analytics</a></h2>
 									</header> <!--keep image size 1119 × 746px-->
 									<a href="https://github.com/PyBana/Project_SalesAnalytics" class="image fit" target="_blank"><img src="images\SalesAnalyticsPic.png" alt=""/></a>
